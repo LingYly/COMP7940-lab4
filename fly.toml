@@ -24,7 +24,7 @@ primary_region = 'hkg'
     type = 'connections'
 
   [[services.ports]]
-    handlers = ['http]
+    handlers = ['http']
     port = 80
 
   [[services.ports]]
