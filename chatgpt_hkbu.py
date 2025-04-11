@@ -1,5 +1,9 @@
+﻿# -*- coding:utf-8 -*-
+
 import configparser
 import requests
+
+
 class HKBU_ChatGPT():
     def __init__(self,config_='./config.ini'):
         if type(config_) == str:
@@ -21,9 +25,12 @@ class HKBU_ChatGPT():
         else:
             return 'Error:', response
     
+
+
 if __name__ == '__main__':
     ChatGPT_test = HKBU_ChatGPT()
     while True:
         user_input = input("Typing anything to ChatGPT:\t")
         response = ChatGPT_test.submit(user_input)
         print(response)
+    

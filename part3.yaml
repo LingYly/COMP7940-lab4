@@ -1,0 +1,17 @@
+version: '3'
+services:
+  chatbot:
+    image: comp7940-chatbot
+    environment:
+      - ACCESS_TOKEN_TG=7758627652:AAERpLy57vpO-2fyXaoe3Wd1_CvHhn5BeCo
+      - ACCESS_TOKEN_CHATGPT=a38837ba-0eed-477b-a06f-ad7a0cbd12fd
+      - PASSWORD_REDIS=IoLEiix55UFPROIFu9u2PQpe9L1R53Yl
+      - PORT_REDIS=19810
+      - HOST_REDIS=redis-19810.c283.us-east-1-4.ec2.redns.redis-cloud.com
+    depends_on:
+      - redis
+  redis:
+    image: redis
+    volumes:
+      - ./redis.conf:/usr/local/etc/redis/redis.conf
+    command: ["/usr/local/etc/redis/redis.conf"]

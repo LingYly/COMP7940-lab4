@@ -1,4 +1,4 @@
-"""Basic connection example.
+﻿"""Basic connection example.
 """
 
 import redis

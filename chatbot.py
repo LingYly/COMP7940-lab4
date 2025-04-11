@@ -1,4 +1,4 @@
-##this file is based on version 13.7 of python telegram chatbot##and version 1.26.18 of urllib3##chatbot.pyimport telegram
+﻿##this file is based on version 13.7 of python telegram chatbot##and version 1.26.18 of urllib3##chatbot.pyimport telegram
 from telegram.ext import Updater,CommandHandler,CallbackContext,MessageHandler,Filters#The messageHandler is used for all message updates
 import configparser
 from telegram import Update 
